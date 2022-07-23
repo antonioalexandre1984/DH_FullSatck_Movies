@@ -1,0 +1,23 @@
+//Criar arquivo package.json
+yarn init -y
+
+// Instalar o express
+yarn add express
+
+// Instalar o nodemon
+yarn add nodemon
+
+// Instalar o mysql2
+yarn add mysql2
+
+//Instalar o metodo over-ride
+yarn add method-override
+
+// Instalar o sequelize
+yarn add sequelize sequelize-cli
+
+// Criar migration
+npx sequelize-cli migration:generate --name create-clientes
+
+// Rodar testes 
+node tests/movie.test.js
